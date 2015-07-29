@@ -100,13 +100,13 @@
 ### Description
 新用户递交申请
 ### parameters
-| name | required | type | note |
-| --- | --- | --- |
-| phoneNumber | true | String | 电话号码|
-| cityCode | true | Int | 城市列表 |
-| areaCode | true | Int | 区列表 |
-| speficLocation | true | String | 详细地址 |
-| sexualBiasCode | true | Int | 性别偏好|
+ name | required | type | note 
+ --- | --- | ---| --- 
+ phoneNumber | true | String | 电话号码
+ cityCode | true | Int | 城市列表 
+ areaCode | true | Int | 区列表 
+ speficLocation | true | String | 详细地址 
+ sexualBiasCode | true | Int | 性别偏好
 ### Responses
 成功申请与否
 
