@@ -100,13 +100,13 @@
 ### Description
 新用户递交申请
 ### parameters
-| name | required | type | note |
-|
-| phoneNumber | true | String | 电话号码|
-| cityCode | true | Int | 城市列表 |
-| areaCode | true | Int | 区列表 |
-| speficLocation | true | String | 详细地址 |
-| sexualBiasCode | true | Int | 性别偏好|
+ name | required | type | note 
+ --- | --- | --- | --- 
+ phoneNumber | true | String | 电话号码
+ cityCode | true | Int | 城市列表 
+ areaCode | true | Int | 区列表 
+ speficLocation | true | String | 详细地址 
+ sexualBiasCode | true | Int | 性别偏好
 ### Responses
 成功申请与否
 
@@ -115,9 +115,9 @@
 发送验证短信
 ### Description
 ### parameters
-| name | required | type | note |
-|
-| phoneNumber | true | String | 待验证电话号码 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ phoneNumber | true | String | 待验证电话号码  
 ### Responses
 是否发送成功
 
@@ -127,11 +127,11 @@
 ### Description
 新用户注册流程：填写手机号，昵称，收到验证码注册
 ### parameters
-| name | required | type | note |
-|
-| phoneNumber | true | String | 注册电话号码 | 
-| verificationCode | true | String | 验证码 |
-| nickName | true | String | 昵称 |
+ name | required | type | note 
+--- | --- | --- | ---
+ phoneNumber | true | String | 注册电话号码 
+ verificationCode | true | String | 验证码 
+ nickName | true | String | 昵称 
 ### Responses
 是否注册成功
 
@@ -141,10 +141,10 @@
 登录/获取token
 ### Description
 ### parameters
-| name | required | type | note |
-|
-| phoneNumber | true | String | 手机号 |
-| password | true | String | 密码 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ phoneNumber | true | String | 手机号 
+ password | true | String | 密码 
 ### Responses
 验证成功，返回token
 
@@ -157,10 +157,10 @@
 ### Description
 登录之后获取登录用户信息，用于首页呈现等
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 用户id |
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 用户id 
 
 ### Responses
 	<json>
@@ -183,10 +183,10 @@
 ### Description
 相服务端申请换箱，服务端判断是否达到条件，返回申请成功与否。
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 箱子的编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 箱子的编号  
 ### Responses
 是否成功，不成功的理由？(时间或者有账单未支付)
 
@@ -198,10 +198,10 @@
 
 后台给其他用户推送消息。
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 箱子的编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 箱子的编号  
 ### Responses
 是否成功。
 
@@ -211,11 +211,11 @@
 ### Description
 新用户扫描箱子进行绑定
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| boxid | true | String | 箱子的编号 | 
-| userid | true | String | 用户编号 |
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ boxid | true | String | 箱子的编号  
+ userid | true | String | 用户编号 
 ### Responses
 绑定是否成功
 
@@ -224,10 +224,10 @@
  #3页，获取盒子的商品
 ### Description
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 箱子的编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 箱子的编号  
 ### Responses
 	<json>
 	{
@@ -246,10 +246,10 @@
  #4页，获取盒子的信息
 ### Description
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 箱子的编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 箱子的编号  
 ### Responses
 	<json>
 	{
@@ -272,10 +272,10 @@
 ### Description
 获取用户历史账单，包括待付账单。
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 用户编号 | 
+ name | required | type | note 
+  --- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 用户编号  
 ### Responses
 	<json>
 	{
@@ -291,10 +291,10 @@
 获取账单详细信息
 ### Description
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 账单编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 账单编号  
 ### Responses
 	<json>
 	{
@@ -326,10 +326,10 @@
 ### Description
 点击喜欢某个商品，从而影响下一次箱子的配送
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| productId | true | String | 商品编号 | 
+ name | required | type | note 
+  --- | --- | --- | ---
+ token | true | String | 令牌 
+ productId | true | String | 商品编号  
 ### Responses
 确认是否成功
 
@@ -339,10 +339,10 @@
 ### Description
 取消对某个商品的喜欢
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| productId | true | String | 商品编号 | 
+ name | required | type | note 
+ --- | --- | --- | ---
+ token | true | String | 令牌 
+ productId | true | String | 商品编号  
 ### Responses
 确认是否成功
 
@@ -352,11 +352,11 @@
 ### Description
 通过扫描或点击，确认消费了箱子中的商品
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| boxId | true | String | box编号 | 
-| productId | true | String | 商品编号 | 
+ name | required | type | note 
+   --- | --- | --- | ---
+ token | true | String | 令牌 
+ boxId | true | String | box编号 
+ productId | true | String | 商品编号 
 ### Responses
 是否确认成功
 
@@ -366,11 +366,11 @@
 ### Description
 取消消费
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| boxId | true | String | box编号 | 
-| productId | true | String | 商品编号 | 
+ name | required | type | note 
+--- | --- | --- | ---
+ token | true | String | 令牌 
+ boxId | true | String | box编号 
+ productId | true | String | 商品编号 
 ### Responses
 是否取消成功
 
@@ -380,11 +380,11 @@
 ### Description
 从账单中确认自己消费了却未确认的消费
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| billId | true | String | 账单编号 | 
-| productId | true | String | 商品编号 | 
+  name | required | type | note 
+  --- | --- | --- | ---
+ token | true | String | 令牌 
+ billId | true | String | 账单编号 
+ productId | true | String | 商品编号  
 ### Responses
 确认是否成功
 
@@ -395,11 +395,11 @@
 ### Description
 每次获取有限个之前未标注过喜欢的商品。
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| id | true | String | 用户编号 |
-| num | true | Int | 一次获取多少商品 |
+ name | required | type | note 
+  --- | --- | --- | ---
+ token | true | String | 令牌 
+ id | true | String | 用户编号 
+ num | true | Int | 一次获取多少商品 
 ### Responses
 	<json>
 	{
@@ -422,15 +422,15 @@
 服务端生成支付宝订单示例
 [link](https://github.com/dcloudio/H5P.Server/tree/master/payment)
 ### parameters
-| name | required | type | note |
-|
-| token | true | String | 令牌 |
-| type | true | Int | 支付类似，充值，支付账单，支付订单 |
-| id | true | String | 用户/账单/订单编号 |
-| channel | true | String | 支付通道，alipay,wxpay |
-| amount | true | Double | 总金额 |
-| subject| true | String | 支付订单标题 |
-| body | false | String | 支付订单详情 | 
+ name | required | type | note 
+  --- | --- | --- | ---
+ token | true | String | 令牌 
+ type | true | Int | 支付类似，充值，支付账单，支付订单 
+ id | true | String | 用户/账单/订单编号 
+ channel | true | String | 支付通道，alipay,wxpay 
+ amount | true | Double | 总金额 
+ subject| true | String | 支付订单标题 
+ body | false | String | 支付订单详情  
 ### Responses
 返回支付订单信息
 
