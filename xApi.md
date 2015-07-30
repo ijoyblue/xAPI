@@ -101,7 +101,7 @@
 新用户递交申请
 ### parameters
  name | required | type | note 
- --- | --- | --- | --- 
+ --- | --- | ---| --- 
  phoneNumber | true | String | 电话号码
  cityCode | true | Int | 城市列表 
  areaCode | true | Int | 区列表 
